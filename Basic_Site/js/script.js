@@ -3,19 +3,19 @@ var app = angular.module("computer", ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.
     when('/main', {
-        templateUrl: 'main.html',
+        templateUrl: '../main.html',
         controller: 'MainCtrl'
     }).
     when('/about', {
-        templateUrl: 'about.html',
+        templateUrl: '../about.html',
         controller: 'MainCtrl'
     }).
     when('/services', {
-        templateUrl: 'services.html',
+        templateUrl: '../services.html',
         controller: 'ServicesCtrl'
     }).
     when('/contact', {
-        templateUrl: 'contact.html',
+        templateUrl: '../contact.html',
         controller: 'ContactCtrl'
     }).
     otherwise({
