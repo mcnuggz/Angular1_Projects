@@ -4,7 +4,7 @@
 - Front End Development & UI
 - AngularJS Framework
 - NodeJS & Backend Development
-- Databases MongoDB, FireBase
+- Databases: MongoDB, FireBase
 - NPM & Bower
 - Gulp & Grunt
 - MEAN Stack / MEAN JS
