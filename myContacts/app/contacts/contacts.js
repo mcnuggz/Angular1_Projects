@@ -10,5 +10,11 @@ angular.module('myContacts.contacts', ['ngRoute', 'firebase'])
   }])
 
   .controller('ContactsCtrl', ['$scope', '$firebaseArray', function ($scope, $firebaseArray) {
-
+     var ref = new Firebase('https://mycontactsapp-4afda.firebaseio.com/contacts');
+     $scope.contacts = $firebaseArray(ref);
+     
+     //console.log($scope.contacts);
+     $scope.showAddForm = function(){
+       $scope.addFormShow = true;
+     }
   }]);

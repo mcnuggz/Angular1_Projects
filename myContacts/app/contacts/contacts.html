@@ -12,21 +12,21 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr ng-repeat="contact in contacts">
                     <td>
-                        <a href="#">John Doe</a>
+                        <a href="#">{{contact.name}}</a>
                     </td>
-                    <td>Some Company</td>
-                    <td>something@something.com</td>
+                    <td>{{contact.company}}</td>
+                    <td>{{contact.email}}</td>
                     <td>
-                        <a class="button tiny">Edit</a>
-                        <a class="button tiny alert">Delete</a>
+                        <a class="button tiny" ng-click="showEditForm(contact)">Edit</a>
+                        <a class="button tiny alert" ng-click="removeContact(contact)">Delete</a>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div class="small-12 large-2 columns">
-        <a class="button large">+</a>
+        <a class="button large" ng-click="showAddForm()">+</a>
     </div>
 </div>
